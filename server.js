@@ -14,7 +14,7 @@ app.get('/:date', (req, res) => {
     ts = new Date(Date.parse(date));
   }
   
-  var ms = ts.getTime();
+  var ms = ts.getTime()/1000;
   
   res.json({ unix: ms, natural: Number.isNaN(ms) ? null : ts.toLocaleDateString('en-US', options) });
 });
