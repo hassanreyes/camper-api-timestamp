@@ -1,5 +1,6 @@
 var express = require('express'),
-    app = express();
+    app = express(),
+    port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT;
 
 app.get('/:date', (req, res) => {
   
