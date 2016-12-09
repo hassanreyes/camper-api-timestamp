@@ -1,1 +1,1 @@
-web: node -m 5 server.js
+web: node server.js
