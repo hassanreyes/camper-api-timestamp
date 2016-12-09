@@ -9,7 +9,7 @@ app.get('/:date', (req, res) => {
   var ts;
   
   if(/^\d+$/.test(date)){
-    ts = new Date(Number(date));
+    ts = new Date(Number(date) * 1000);
   }else{
     ts = new Date(Date.parse(date));
   }
