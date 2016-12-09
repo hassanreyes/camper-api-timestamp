@@ -23,6 +23,6 @@ app.get("*", (req, res) =>{
   res.send("<p>Please pass a date parameter in the URL.</p>");
 });
 
-app.listen(8080, function () {
+app.listen(port, function () {
   console.log('Example app listening on port 8080!')
 })
